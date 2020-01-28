@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Bank App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>SHAM Credit Union</h1>
+    </div>
+    <form>
+      <label for="name">Name</label>
+      <input class="Name" type="text"><br>
+      <label for="open">Opening Deposit</label>
+      <input class="open" type="text"><br>
+      <button class="btn-success" type="submit">Open Account!</button>
+    </form>
+    <form>
+      <label for="deposit">Deposit Amount</label>
+      <input class="deposit" type="text"><br>
+      <label for="withdraw">Withdrawal Amount</label>
+      <input class="withdraw" type="text"><br>
+      <button class="btn-success" type="submit">Show me the money!</button>
+    </form>
+    <div id="output">
+      <p>Name: <span class="newName"></span></p>
+      <p>Opening Balance: $<span class="openBalance"></span></p>
+    
+    </div>
+  </div>
+  
+</body>
+</html>
