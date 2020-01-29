@@ -12,8 +12,12 @@ function Account(name, open, deposit, withdrawal) {
   this.name = name,
   this.open = open,
   this.deposit = deposit,
-  this.withdrawal = withdrawal 
+  this.withdrawal = withdrawal
+
 }
+
+
+
 
 
 //front end
@@ -27,16 +31,15 @@ $(document).ready(function(){
     var userOpen = parseInt($("input.open").val());
     var userDeposit = parseInt($("input.deposit").val());
     var userWithdraw = parseInt($("input.withdraw").val());
+    var adding = userOpen + userDeposit;
     var newAccount = new Account (userName, userOpen, userDeposit, userWithdraw);
     bank.addAccount(newAccount);
-    console.log(bank);
-    
-    
 
+console.log(bank);
     $("#output").show();
     $(".newName").html(userName);
     $(".openBalance").html(userOpen);
-    
+    $(".newBalance").html(adding);
     
     
   });
